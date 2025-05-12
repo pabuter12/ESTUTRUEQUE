@@ -1,0 +1,318 @@
+!DOCTYPE html
+html lang=es
+head
+  meta charset=UTF-8 
+  meta name=viewport content=width=device-width, initial-scale=1.0
+  titleEstuTruequetitle
+  link href=httpsfonts.googleapis.comcss2family=Interwght@400;600;700&display=swap rel=stylesheet 
+  style
+    root {
+      --primary-color #7f1d1d;
+      --secondary-color #fef2f2;
+      --text-color #1f2937;
+      --card-bg rgba(255, 255, 255, 0.6);
+      --shadow-color rgba(0, 0, 0, 0.1);
+    }
+
+     {
+      box-sizing border-box;
+      margin 0;
+      padding 0;
+    }
+
+    body {
+      font-family 'Inter', sans-serif;
+      background linear-gradient(to right, #fff1f2, #ffe4e6);
+      color var(--text-color);
+      line-height 1.6;
+    }
+
+    header {
+      background-color var(--primary-color);
+      color white;
+      display flex;
+      align-items center;
+      justify-content space-between;
+      padding 1rem 2rem;
+      position relative;
+      box-shadow 0 4px 12px var(--shadow-color);
+    }
+
+    header h1 {
+      font-size 1.5rem;
+    }
+
+    .icon-btn {
+      background none;
+      border none;
+      color white;
+      font-size 1.5rem;
+      cursor pointer;
+      transition transform 0.2s;
+    }
+
+    .icon-btnhover {
+      transform scale(1.1);
+    }
+
+    .menu-content {
+      display none;
+      position absolute;
+      top 60px;
+      left 1rem;
+      background white;
+      border-radius 12px;
+      box-shadow 0 10px 20px var(--shadow-color);
+      padding 1rem;
+      z-index 1000;
+    }
+
+    .menu-content a {
+      display block;
+      padding 0.5rem;
+      color var(--text-color);
+      text-decoration none;
+      border-radius 8px;
+    }
+
+    .menu-content ahover {
+      background #f3f4f6;
+    }
+
+    .banner-img {
+      width 100%;
+      height auto;
+      border-bottom 2px solid var(--primary-color);
+    }
+
+    .quote {
+      text-align center;
+      padding 1.5rem;
+      font-style italic;
+      font-size 1.1rem;
+      background rgba(255, 255, 255, 0.4);
+      backdrop-filter blur(5px);
+      margin-bottom 1rem;
+    }
+
+    .section {
+      padding 2rem 1.5rem;
+      max-width 960px;
+      margin auto;
+    }
+
+    .section h2 {
+      font-size 2rem;
+      margin-bottom 1rem;
+      color var(--primary-color);
+    }
+
+    .section p {
+      font-size 1.05rem;
+    }
+
+    .section a {
+      display inline-block;
+      margin-top 1rem;
+      color var(--primary-color);
+      font-weight 600;
+      text-decoration none;
+      transition color 0.3s;
+    }
+
+    .section ahover {
+      color #dc2626;
+    }
+
+    .qr-section {
+      text-align center;
+      padding 2rem 1rem;
+      background rgba(255, 255, 255, 0.5);
+      border-radius 12px;
+      max-width 600px;
+      margin 2rem auto;
+      box-shadow 0 8px 20px var(--shadow-color);
+    }
+
+    .qr-section img {
+      width 180px;
+      height 180px;
+      object-fit contain;
+      margin-top 1rem;
+    }
+
+    .categories {
+      padding 2rem 1rem;
+      max-width 1200px;
+      margin auto;
+    }
+
+    .categories h2 {
+      text-align center;
+      font-size 2rem;
+      margin-bottom 2rem;
+    }
+
+    .cards {
+      display grid;
+      grid-template-columns repeat(auto-fit, minmax(250px, 1fr));
+      gap 2rem;
+    }
+
+    .card {
+      background var(--card-bg);
+      backdrop-filter blur(10px);
+      border-radius 16px;
+      padding 1rem;
+      text-align center;
+      box-shadow 0 4px 16px var(--shadow-color);
+      transition transform 0.3s;
+    }
+
+    .cardhover {
+      transform translateY(-5px);
+    }
+
+    .card img {
+      width 100%;
+      height 150px;
+      object-fit cover;
+      border-radius 12px;
+      margin-bottom 1rem;
+    }
+
+    .card h3 {
+      font-size 1.25rem;
+      margin-bottom 0.5rem;
+      color var(--primary-color);
+    }
+
+    .socials {
+      display flex;
+      justify-content center;
+      gap 2rem;
+      font-size 1.8rem;
+      padding 2rem 0;
+    }
+
+    footer {
+      text-align center;
+      font-size 0.9rem;
+      color #555;
+      padding 1.5rem;
+      background #fff5f5;
+    }
+
+    .dynamic-info {
+      animation fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity 0; transform translateY(20px); }
+      to { opacity 1; transform translateY(0); }
+    }
+
+    @media (max-width 768px) {
+      header h1 {
+        font-size 1.2rem;
+      }
+    }
+  style
+head
+body
+  header
+    button id=menuBtn class=icon-btn☰button
+    h1EstuTruequeh1
+    span class=icon-btn search-icon🔍span
+
+    div class=menu-content id=menuContent
+      a href=#Inicioa
+      a href=#Nosotrosa
+      a href=#FAQsa
+      a href=#Contactoa
+    div
+  header
+
+  img src=httpspicsum.photos1080400 alt=Imagen destacada class=banner-img 
+
+  div class=quote
+    ¡Trueque de saberes, trueque de poderes!br 
+    strong— Comunidad EstuTruequestrong
+  div
+
+  section class=section
+  pstrong¿Quieres formar parte de la comunidad Estutruequestrongp
+  h2Nosotrosh2
+  pConoce a los estudiantes líderes que impulsan esta iniciativa de intercambio solidario en la UTP.p
+  a href=#Conócenosa
+section
+
+section class=section
+  pstrong¿Te animas a intercambiar, pero no sabes cómo empezarstrongp
+  h2Preguntas frecuentesh2
+  pExplora cómo otros han compartido y recibido desde saberes hasta objetos útiles.p
+  a href=#Aclara tus dudasa
+section
+
+
+  section class=section dynamic-info
+    h2¿Qué hacemosh2
+    p
+      En EstuTrueque conectamos estudiantes con talento y ganas de aprender. Creamos una plataforma donde puedes intercambiar conocimientos, habilidades o ayuda con otros estudiantes de la UTP, sin usar dinero.
+      ¿Sabes matemáticas y necesitas ayuda con inglés ¿Sabes diseñar y necesitas apoyo en contabilidad ¡Aquí puedes hacer un trueque solidario y construir redes de apoyo que transforman tu vida universitaria!
+    p
+  section
+
+  div class=qr-section
+    h2¡Regístrate ya!h2
+    img src=httpspicsum.photos400 alt=QR Registro 
+  div
+
+  section class=categories
+    h2¡Truquéate!h2
+    div class=cards
+      div class=card
+        img src=httpspicsum.photos12580 alt=Ropa 
+        h3Ropa y uniformesh3
+        p¡Esa bata o uniforme puede servirle a alguien más!p
+      div
+      div class=card
+        img src=httpspicsum.photos125800 alt=Mudanza 
+        h3¿Te vas a mudarh3
+        p¡Truequea tus cosas antes de irte!p
+      div
+      div class=card
+        img src=httpspicsum.photos12580 alt=Tecnología 
+        h3¿Te sobra un cableh3
+        pIntercámbialo, ¡puede ser útil para otro!p
+      div
+    div
+  section
+
+  div class=socials
+    span📷span
+    span🐦span
+  div
+
+  footer
+    Comunidad estudiantil UTP. Proyecto sin ánimo de lucro.br 
+    © 2024 Estutrueque. Todos los derechos reservados.
+  footer
+
+  script
+    const menuBtn = document.getElementById(menuBtn);
+    const menuContent = document.getElementById(menuContent);
+
+    menuBtn.addEventListener(click, () = {
+      const isVisible = menuContent.style.display === block;
+      menuContent.style.display = isVisible  none  block;
+    });
+
+    document.addEventListener(click, function (event) {
+      if (!menuBtn.contains(event.target) && !menuContent.contains(event.target)) {
+        menuContent.style.display = none;
+      }
+    });
+  script
+body
+html
