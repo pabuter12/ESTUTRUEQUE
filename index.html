@@ -26,6 +26,11 @@
       object-fit: contain; /* asegura que la imagen no se recorte ni distorsione */
 }
 
+    main {
+  margin-top: 80px; /* ajusta esto según la altura real de tu header */
+}
+
+
 
     body {
       font-family: 'Inter', sans-serif;
@@ -34,16 +39,21 @@
       line-height: 1.6;
     }
 
-    header {
-      background-color: var(--primary-color);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.5rem 0.5rem; /* antes: 1rem 2rem */
-      position: relative;
-      box-shadow: 0 4px 12px var(--shadow-color);
-    }
+  header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  position: fixed;        /* <-- hace que el header quede fijo */
+  top: 0;                 /* <-- lo posiciona en la parte superior */
+  left: 0;
+  width: 100%;            /* <-- asegura que ocupe todo el ancho */
+  z-index: 1000;          /* <-- asegura que esté encima del resto del contenido */
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
 
     header h1 {
       font-size: 1.5rem;
