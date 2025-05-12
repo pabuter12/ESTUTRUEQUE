@@ -39,20 +39,21 @@
       line-height: 1.6;
     }
 
-  header {
-  background-color: var(--primary-color);
+ header {
+  background-color: #7F1D1D;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0.5rem;
-  position: fixed;        /* <-- hace que el header quede fijo */
-  top: 0;                 /* <-- lo posiciona en la parte superior */
+  position: fixed; /* o sticky */
+  top: 0;
   left: 0;
-  width: 100%;            /* <-- asegura que ocupe todo el ancho */
-  z-index: 1000;          /* <-- asegura que esté encima del resto del contenido */
-  box-shadow: 0 4px 12px var(--shadow-color);
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 
     header h1 {
